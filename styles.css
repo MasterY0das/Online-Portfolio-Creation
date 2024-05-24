@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+    background-color: #2e2e2e;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #888;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e74c3c;
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+.about img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.contact-skills p {
+    margin: 10px 0;
+}
+
+.resume .narrative, .projects .project {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+    background-color: #3b3b3b;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.resume .narrative h3, .projects .project h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.projects .project p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.projects img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.contact p {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    color: #888;
+}
+
+.social-media a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #888;
+    font-size: 18px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
